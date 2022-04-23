@@ -1,0 +1,29 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    colorize (0.8.1)
+    date (3.2.2)
+    open-uri (0.2.0)
+      stringio
+      time
+      uri
+    prettyprint (0.1.1)
+    rexml (3.2.5)
+    rss (0.2.9)
+      rexml
+    stringio (3.0.1)
+    time (0.2.0)
+      date
+    uri (0.11.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  colorize
+  open-uri
+  prettyprint
+  rss
+
+BUNDLED WITH
+   2.3.7
