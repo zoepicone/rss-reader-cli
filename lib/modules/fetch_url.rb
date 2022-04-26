@@ -1,10 +1,13 @@
+# typed: true
+require 'sorbet-runtime'
 require 'open-uri'
 require 'uri'
+require 'tempfile'
 
 module FetchUrl
+  extend T::Sig
 
-  # @param uri_str [String]
-  # @return [IO, nil]
+  sig{params(uri_str: String).returns(T.nilable(T.any(Tempfile, StringIO)))}
   def self.read_url(uri_str)
     begin
       if URI.parse(uri_str).kind_of?(URI::HTTP)

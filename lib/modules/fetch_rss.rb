@@ -1,9 +1,11 @@
+# typed: true
+require 'sorbet-runtime'
 require 'rss'
 
 module FetchRss
+  extend T::Sig
 
-  # @param feed_url [IO]
-  # @return [RSS::Rss, RSS::Atom::Feed, nil]
+  sig{params(feed_url: T.nilable(T.any(Tempfile, StringIO))).returns(T.nilable(T.any(RSS::Rss, RSS::Atom::Feed)))}
   def self.read_feed(feed_url)
     begin
       rss_feed = RSS::Parser.parse(feed_url)

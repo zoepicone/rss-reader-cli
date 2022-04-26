@@ -1,10 +1,11 @@
+# typed: true
+require 'sorbet-runtime'
 require 'colorize'
 
 module FormatRss
+  extend T::Sig
 
-  # @param feed[RSS::Rss]
-  # @param count[Integer]
-  # @return [nil]
+  sig {params(feed: RSS::Rss, count: Integer).returns(NilClass)}
   def self.print_feed_headlines_rss(feed, count)
     begin
       puts "#{feed.channel.title.to_str.bold} - #{feed.channel.link.to_str.blue}\n\n"
@@ -22,9 +23,7 @@ module FormatRss
     end
   end
 
-  # @param feed[RSS::Atom::Feed]
-  # @param count[Integer]
-  # @return [nil]
+  sig {params(feed: RSS::Atom::Feed, count: Integer).returns(NilClass)}
   def self.print_feed_headlines_atom(feed, count)
     begin
       puts "#{feed.title.content.bold}\n\n"
