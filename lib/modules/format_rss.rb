@@ -14,7 +14,7 @@ module FormatRss
         puts "  #{item.title}\n" +
              "    #{item.description.to_str.gsub(/<\/?[^>]*>/, "").light_black}\n" + # strip html tags
              "    Read more: #{item.link.to_str.blue}\n\n"
-      end
+             end
 
       nil
     rescue StandardError
@@ -32,7 +32,7 @@ module FormatRss
         puts "  #{item.title.content}\n" +
              "    #{item.content.content.gsub(/<\/?[^>]*>/, "").light_black}\n" + # strip html tags
              "    Read more: #{item.link.href.to_str.blue}\n\n"
-      end
+             end
 
       nil
     rescue StandardError
