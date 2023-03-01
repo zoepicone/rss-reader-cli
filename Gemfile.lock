@@ -12,7 +12,7 @@ GEM
       rexml
     sorbet (0.5.10526)
       sorbet-static (= 0.5.10526)
-    sorbet-runtime (0.5.10526)
+    sorbet-runtime (0.5.10690)
     sorbet-static (0.5.10526-x86_64-linux)
     stringio (3.0.2)
     time (0.2.0)
