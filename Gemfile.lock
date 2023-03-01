@@ -10,10 +10,10 @@ GEM
     rexml (3.2.5)
     rss (0.2.9)
       rexml
-    sorbet (0.5.10526)
-      sorbet-static (= 0.5.10526)
+    sorbet (0.5.10689)
+      sorbet-static (= 0.5.10689)
     sorbet-runtime (0.5.10526)
-    sorbet-static (0.5.10526-x86_64-linux)
+    sorbet-static (0.5.10689-x86_64-linux)
     stringio (3.0.2)
     time (0.2.0)
       date
